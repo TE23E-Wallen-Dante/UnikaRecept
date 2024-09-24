@@ -80,7 +80,7 @@ a:hover {
 #logotype {
     width: 350px;
     padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-bottom: 60%;
     margin: auto;
     display: block;
 }

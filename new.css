@@ -1,14 +1,24 @@
+/*General stuff*/
 body {
     margin: 0;
     overflow-x: hidden;
-    background-color: #ca91a8;
+    background-color: #ffbcd8;
+    font-family: Tahoma, sans-serif;
 }
 
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #61fc9f;
+}
+
+/*Grid setup*/
 .main {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
     grid-template-rows: auto, 1fr, 1fr, auto;
-
 }
 
 .header {
@@ -33,35 +43,54 @@ body {
     grid-column-end: 4;
 }
 
+/*Site header customization*/
 #main-header {
     margin: 0;
-    font-family: Tahoma, sans-serif;
     text-align: center;
     color: #f0f8ff;
-    background-color: #342428;
+    background-color: #3e131d;
 }
 
-#infobox {
-    background-color: #00000080;
+/*Info box showing recipes customization*/
+.container {
+    padding-top: 3vh;
+}
+
+.info-box {
+    padding: 2px;
     border-radius: 4vh;
     color: #f0f8ff;
-    min-height: 100%;
-    text-align: center;
+    background-color: #00000080;
+    list-style-position: inside; /*Displays list inside instead of to the left*/
+    text-align: ce;
+}
+
+#recipes-header {
+    text-align: center; /*Centering the "Våra favoriter" text*/
+}
+
+/*Logotype customization*/
+.logotype {
+    padding-bottom: 5vh;
 }
 
 #logo {
-    margin-bottom: 5%;
+    padding-top: 20vh;
     width: 100%;
 }
 
-#copyright {
-    margin: 0;
+/*Footer customization*/
+.footer {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    bottom: 0;
+    position: absolute;
+}
 
+#copyright {
+    margin-bottom: 0;
+    padding: 2vh;
     text-align: center;
     color: #f0f8ff;
-    background-color: #342428;
+    background-color: #3e131d;
     font-family: Arial, Helvetica, sans-serif;
 }

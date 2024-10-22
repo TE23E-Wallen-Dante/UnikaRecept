@@ -15,41 +15,42 @@ a:hover {
 }
 
 /*Grid setup*/
-.main {
+main {
     display: grid;
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: 1fr, 2fr, 1fr;
     grid-template-rows: auto, 1fr, 1fr, auto;
 }
 
 .header {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-row: 1;
+    grid-column: 1/4;
 }
 
 .container {
-    grid-row-start: 2;
+    grid-row: 2;
     grid-column-start: 2;
 }
 
 .logotype {
-    grid-row-start: 3;
+    grid-row: 3;
     grid-column-start: 2;
 }
 
 .footer {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-row: 4;
+    grid-column: 1/4;
 }
 
 /*Site header customization*/
 #main-header {
+    padding: 1vh;
     margin: 0;
     text-align: center;
     color: #f0f8ff;
-    background-color: #3e131d;
+    background-color: #472d33;
 }
+
+/*Site header text-decoration no unline*/
 
 /*Info box showing recipes customization*/
 .container {
@@ -61,8 +62,8 @@ a:hover {
     border-radius: 4vh;
     color: #f0f8ff;
     background-color: #00000080;
-    list-style-position: inside; /*Displays list inside instead of to the left*/
-    text-align: ce;
+    list-style-position: inside;
+    padding-bottom: 2vh;
 }
 
 #recipes-header {
@@ -75,15 +76,20 @@ a:hover {
 }
 
 #logo {
-    padding-top: 20vh;
-    width: 100%;
+    position: absolute;
+    height: 25%;
+    bottom: 8vh;
+
+    /*Aligning the image to the center*/
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*Footer customization*/
 .footer {
     width: 100%;
     bottom: 0;
-    position: absolute;
+    position: fixed;
 }
 
 #copyright {
@@ -91,6 +97,22 @@ a:hover {
     padding: 2vh;
     text-align: center;
     color: #f0f8ff;
-    background-color: #3e131d;
+    background-color: #472d33;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/*smultronpaj.hmtl*/
+/*Image properties for the preview image*/
+#smultronpaj {
+    display: block;
+    margin: auto;
+    padding-bottom: 3vh;
+    height: 40vh;
+}
+
+#logo-smultronpaj {
+    display: block;
+    margin: auto;
+    max-height: 20vh;
+    padding: 5vh;
 }

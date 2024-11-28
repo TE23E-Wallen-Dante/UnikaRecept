@@ -4,33 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hem | Unika Recept</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Unika tågset</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
-    <main>
-        <div class="header">
-            <h1 id="main-header"><a id="site-header-textdeco" href="./index.html">Unika Recept</a></h1>
-        </div>
-        <div class="container">
-            <div class="info-box">
-                <h2 id="recipes-header">Våra favoriter:</h2>
-                <ul id="main-recipe-list">
-                    <li><a href="./smultronpaj.html">Smultronpaj</a></li>
-                    <li><a href="./under-construction.html">Citronkaka</a></li>
-                    <li><a href="./under-construction.html">Kladdkaka</a></li>
-                    <li><a href="./under-construction.html">Muffins</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="logotype">
-            <img id="logo" src="./images/logotype.webp" alt="Logotyp för Unika Recept">
-        </div>
-        <div class="footer">
-            <p id="copyright">&copy; Unika Recept 2024</p>
-        </div>
-    <main>
+    <h1>Välkommen till Unika Tågset</h1>
+    <article>
+        <h2>C13</h2>
+        <a href="https://www.sparvagssallskapet.se/vagnhallen/typ.php?typ_id=290"><img src="./images/C13.webp" alt="Tunnelbanetåg i modell C13"></a></a>
+        <p id="stretch">Pris: 1 435 000 kr / st<br>Typ: Tunneltåg<br>Företag: ASEA</p>
+        <button onclick="choose('C13','1 435 000','Tunneltåg','ASEA')" id="buy"><img id="shopping-cart" src="./images/shopping_cart.webp" alt=""></button>
+    </article>
+    <article>
+        <h2>C14</h2>
+        <a href="https://www.sparvagssallskapet.se/vagnhallen/typ.php?typ_id=292"><img src="./images/C14.webp" alt="Tunnelbanetåg i modell C14"></a>
+        <p id="stretch">Pris: 3 695 000 kr / st<br>Typ: Tunneltåg<br>Företag: ASEA</p>
+        <button onclick="choose('C14','3 695 000','Tunneltåg','ASEA')" id="buy"><img id="shopping-cart" src="./images/shopping_cart.webp" alt=""></button>
+    </article>
+    <article>
+        <h2>C20</h2>
+        <a href="https://www.sparvagssallskapet.se/vagnhallen/typ.php?typ_id=295"><img src="./images/C20.webp" alt="Tunnelbanetåg i modell C20"></a>
+        <p id="stretch">Pris: 9 480 000 kr / st<br>Typ: Tunneltåg<br>Företag: Bombardier</p>
+        <button onclick="choose('C20','9 480 000','Tunneltåg','Bombardier')" id="buy"><img id="shopping-cart" src="./images/shopping_cart.webp" alt=""></button>
+    </article>
+    <article>
+        <h2>C30</h2>
+        <a href="https://www.sparvagssallskapet.se/vagnhallen/typ.php?typ_id=1019"><img src="./images/C30.webp" alt="Tunnelbanetåg i modell C30"></a>
+        <p id="stretch">Pris: 34 500 000 kr / st<br>Typ: Tunneltåg<br>Företag: Bombardier</p>
+        <button onclick="choose('C30','34 500 000','Tunneltåg','Bombardier')" id="buy"><img id="shopping-cart" src="./images/shopping_cart.webp" alt=""></button>
+    </article>
+    <aside>
+        <h2>I varukorgen:</h2>
+        <ul>
+        
+        </ul>
+    </aside>
+    <button onclick="buy" id="pay">Till Betalning</button>
 </body>
 
 </html>

@@ -25,8 +25,6 @@ article,img {
     border-radius: 10vh;
     border-color: #00000000;
     background-color: #00000050;
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
 }
 
 #buy:hover {
@@ -42,4 +40,23 @@ article,img {
 
 #stretch {
     width: 100%;
+}
+
+#varukorg {
+    padding: 1vh;
+    border-radius: 10vh;
+    border-color: #00000000;
+    background-color: #00000050;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+#varukorg-full {
+    text-align: center;
+    color: #ff5353;
+    padding: 1vh;
+    border-radius: 10vh;
+    border-color: #00000000;
+    background-color: #ffffff80;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
 }
